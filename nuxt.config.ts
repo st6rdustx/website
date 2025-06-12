@@ -81,5 +81,11 @@ export default defineNuxtConfig({
     prerender: {
       routes: ["/", "/projects", "/uses", "/privacy"],
     },
+    preset: "cloudflare_module",
+    cloudflare: {
+      wrangler: {
+        name: "website",
+      },
+    },
   },
 });
