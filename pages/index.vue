@@ -91,7 +91,7 @@ const getDisplayText = (item: SocialItem) => {
     </p>
 
     <p>
-      i own a bunch of domains. check out my
+      i own a few domains. check out my
       <BaseLink
         to="/domains"
         class="underline hover:text-white transition-colors"
