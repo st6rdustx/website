@@ -59,5 +59,6 @@ const navigationLinks: NavigationLink[] = [
   { to: "/uses", label: "uses" },
   { to: "/projects", label: "projects" },
   { to: "/privacy", label: "privacy" },
+  { to: "/domains", label: "domains" },
 ];
 </script>

@@ -4,7 +4,13 @@ const age = Math.floor(
     (1000 * 60 * 60 * 24 * 365.25)
 );
 
-const socials = [
+interface SocialItem {
+  name: string;
+  url: string;
+  username?: string;
+}
+
+const socials: SocialItem[] = [
   {
     name: "GitHub",
     url: "https://github.com/st6rdustx",
@@ -82,6 +88,17 @@ const getDisplayText = (item: SocialItem) => {
       <BaseLink to="/uses" class="underline hover:text-white transition-colors">
         setup</BaseLink
       >.
+    </p>
+
+    <p>
+      i own a bunch of domains. check out my
+      <BaseLink
+        to="/domains"
+        class="underline hover:text-white transition-colors"
+      >
+        domains list</BaseLink
+      >
+      if you're curious about that.
     </p>
 
     <p>

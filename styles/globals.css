@@ -4,12 +4,6 @@
   --color-true-black: #000000;
   --color-true-white: #ffffff;
   --font-mono: "JetBrains Mono", monospace;
-
-  /* Improved color contrast */
-  --color-gray-300: #d1d5db;
-  --color-gray-400: #9ca3af;
-  --color-gray-500: #6b7280;
-  --color-gray-600: #4b5563;
 }
 
 html {
@@ -21,7 +15,6 @@ body {
   @apply bg-true-black text-true-white min-h-screen font-mono;
 }
 
-/* Improved focus indicators for accessibility */
 *:focus {
   outline: none;
 }
@@ -30,14 +23,12 @@ body {
   @apply outline-2 outline-white outline-offset-2;
 }
 
-/* Better button and interactive element focus */
 button:focus-visible,
 [role="button"]:focus-visible,
 a:focus-visible {
   @apply ring-2 ring-white ring-offset-2 ring-offset-true-black;
 }
 
-/* Ensure sufficient color contrast for links */
 a {
   @apply transition-colors duration-200;
 }
@@ -46,24 +37,20 @@ a:hover {
   @apply text-white;
 }
 
-/* Better selection styles */
 ::selection {
   @apply bg-white text-true-black;
 }
 
-/* Improved list semantics - remove default markers since we use custom ones */
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
 
-/* Skip link for screen readers */
 .skip-link {
   @apply absolute left-0 top-0 z-50 bg-white text-true-black px-4 py-2;
   @apply translate-y-[-100%] focus:translate-y-0 transition-transform;
 }
 
-/* High contrast mode support */
 @media (prefers-contrast: high) {
   .text-gray-400 {
     @apply text-gray-300;
@@ -86,7 +73,6 @@ ol[role="list"] {
   }
 }
 
-/* Reduced motion support */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -96,10 +82,4 @@ ol[role="list"] {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
-}
-
-/* Better dark mode support (though we're already dark) */
-@media (prefers-color-scheme: light) {
-  /* Keep dark theme even if user prefers light mode */
-  /* This maintains the intended design aesthetic */
 }
