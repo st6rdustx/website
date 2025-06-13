@@ -32,7 +32,7 @@
     </div>
   </section>
 
-  <Footer text="uwu" />
+  <Footer text="inspired by erisa.uk/domains" />
 </template>
 
 <script setup lang="ts">
