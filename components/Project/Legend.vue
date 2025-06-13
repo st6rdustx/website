@@ -22,7 +22,7 @@
 </template>
 
 <script setup lang="ts">
-import type { ProjectStatus } from "./ProjectGrid.vue";
+import type { ProjectStatus } from "./Grid.vue";
 
 interface Props {
   title?: string;
@@ -36,7 +36,6 @@ const statusLabels: Record<ProjectStatus, string> = {
   active: "actively developed",
   wip: "work in progress",
   maintained: "maintained",
-  learning: "learning project",
   archived: "archived",
 };
 </script>

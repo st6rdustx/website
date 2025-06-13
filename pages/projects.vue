@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ProjectSection } from "~/components/ProjectGrid.vue";
+import type { ProjectSection } from "~/components/Project/Grid.vue";
 
 const projects: ProjectSection[] = [
   {
@@ -7,9 +7,16 @@ const projects: ProjectSection[] = [
     items: [
       {
         name: "[tbd]",
-        description: "👀",
-        tech: ["Swift", "SwiftUI"],
+        description: "a new iOS app I'm currently working on",
+        tech: ["Swift", "SwiftUI", "SwiftData"],
         status: "wip",
+      },
+      {
+        name: "website",
+        description: "this website you're currently on",
+        url: "https://github.com/st6rdustx/website",
+        tech: ["Vue", "Nuxt", "Tailwind CSS"],
+        status: "active",
       },
     ],
   },
@@ -21,14 +28,22 @@ const projects: ProjectSection[] = [
         description: "a self-hostable, open source AI-powered code reviewer",
         url: "https://github.com/st6rdustx/glitchy",
         tech: ["Go", "Docker", "Claude"],
-        status: "maintained",
+        status: "archived",
       },
       {
         name: "TwitchKit",
         description: "swift library for interacting with the Twitch IRC",
         url: "https://github.com/st6rdustx/TwitchKit",
         tech: ["Swift"],
-        status: "maintained",
+        status: "archived",
+      },
+      {
+        name: "SteamDB Unofficial Safari Extension",
+        description:
+          "an unofficial port of the SteamDB extension for Safari since the original dev refused to make it",
+        url: "https://github.com/st6rdustx/SteamDB-Unofficial-Safari-Port",
+        tech: ["JavaScript", "Swift"],
+        status: "archived",
       },
     ],
   },
@@ -40,7 +55,7 @@ const projects: ProjectSection[] = [
         description: "a minimal programming language born from boredom",
         url: "https://github.com/st6rdustx/latte",
         tech: ["C++", "LLVM"],
-        status: "learning",
+        status: "archived",
       },
       {
         name: "apple oauth swift",
@@ -53,14 +68,27 @@ const projects: ProjectSection[] = [
     ],
   },
   {
-    category: "archive",
+    category: "university",
     items: [
       {
-        name: "SteamDB Unofficial Safari Extension",
+        name: "bwb",
         description:
-          "an unofficial port of the SteamDB extension for Safari since the original dev refused to make it",
-        url: "https://github.com/st6rdustx/SteamDB-Unofficial-Safari-Port",
-        tech: ["JavaScript", "Swift"],
+          "a web app for managing your smart water bottle [note: this is not a real product, it only includes auth, a dashboard, and a water bottle management page with no real functionality]",
+        url: "https://github.com/st6rdustx/bwb",
+        tech: ["PHP", "MySQL"],
+        status: "archived",
+      },
+    ],
+  },
+  {
+    category: "discord bots",
+    items: [
+      {
+        name: "Discord <-> Minecraft Whitelist",
+        description:
+          "a discord bot that manages a minecraft server whitelist, allowing users to add/remove themselves from the whitelist",
+        url: "https://github.com/st6rdustx/discord-minecraft-whitelist",
+        tech: ["TypeScript", "discord.js"],
         status: "archived",
       },
       {
@@ -68,14 +96,14 @@ const projects: ProjectSection[] = [
         description:
           "open source discord moderation bot with a web dashboard and a lot of features",
         url: "https://github.com/comfykayyy/Shiber",
-        tech: ["JavaScript", "EJS", "Lavalink", "Discord.js", "MongoDB"],
+        tech: ["JavaScript", "EJS", "Lavalink", "discord.js", "MongoDB"],
         status: "archived",
       },
       {
         name: "Vary",
         description:
-          "my first ever programming project, a discord bot that had music, moderation, and fun commands",
-        tech: ["JavaScript", "Lavalink", "Discord.js", "MongoDB"],
+          "my very first programming project, a discord bot that had music, moderation, and fun commands",
+        tech: ["JavaScript", "Lavalink", "discord.js", "MongoDB"],
         status: "archived",
       },
     ],

@@ -78,12 +78,7 @@
 </template>
 
 <script setup lang="ts">
-export type ProjectStatus =
-  | "active"
-  | "wip"
-  | "maintained"
-  | "learning"
-  | "archived";
+export type ProjectStatus = "active" | "wip" | "maintained" | "archived";
 
 export interface Project {
   name: string;
