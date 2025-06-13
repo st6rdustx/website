@@ -124,7 +124,7 @@ const projects: ProjectSection[] = [
     <div class="text-center">
       <BaseLink
         to="https://github.com/st6rdustx?tab=repositories"
-        class="inline-flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+        class="inline-flex items-center space-x-2 text-zinc-400 hover:text-white transition-colors duration-200 text-sm"
       >
         <span>view all my repos on github</span>
         <span aria-hidden="true">→</span>

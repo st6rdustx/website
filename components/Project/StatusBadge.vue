@@ -21,7 +21,7 @@ const statusColors: Record<ProjectStatus, string> = {
   active: "text-green-400",
   wip: "text-orange-400",
   maintained: "text-blue-400",
-  archived: "text-gray-500",
+  archived: "text-zinc-500",
 };
 
 const statusSymbols: Record<ProjectStatus, string> = {

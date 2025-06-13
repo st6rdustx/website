@@ -19,7 +19,7 @@
           to the physical, physiological, genetic, mental, economic, cultural or
           social identity of that natural person.
         </p>
-        <p class="text-xs text-gray-500 mt-6">
+        <p class="text-xs text-zinc-500 mt-6">
           Note: the Personal Data definition comes from the General Data
           Protection Regulation (GDPR).
         </p>

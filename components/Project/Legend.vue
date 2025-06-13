@@ -2,7 +2,7 @@
   <section class="mb-16" :aria-labelledby="sectionId">
     <div
       :id="sectionId"
-      class="text-xs text-gray-400 mb-4 uppercase tracking-wider"
+      class="text-xs text-zinc-400 mb-4 uppercase tracking-wider"
     >
       {{ title }}
     </div>
@@ -15,7 +15,7 @@
         role="listitem"
       >
         <ProjectStatusBadge :status="status as ProjectStatus" />
-        <span class="text-gray-400">{{ label }}</span>
+        <span class="text-zinc-400">{{ label }}</span>
       </div>
     </div>
   </section>

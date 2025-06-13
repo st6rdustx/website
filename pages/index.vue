@@ -45,7 +45,7 @@ const getDisplayText = (item: SocialItem) => {
 <template>
   <Header title="star" size="large">
     <template #subtitle>
-      <div class="text-gray-400 text-sm md:text-base space-y-1">
+      <div class="text-zinc-400 text-sm md:text-base space-y-1">
         <div>portugal</div>
         <div>{{ age }}yo</div>
         <div>silly wannabe programmer</div>
@@ -110,7 +110,7 @@ const getDisplayText = (item: SocialItem) => {
   <section class="mb-16" aria-labelledby="connect">
     <div
       id="connect"
-      class="text-xs text-gray-400 mb-6 uppercase tracking-wider"
+      class="text-xs text-zinc-400 mb-6 uppercase tracking-wider"
     >
       connect
     </div>
@@ -127,13 +127,13 @@ const getDisplayText = (item: SocialItem) => {
           <span class="text-base font-medium">{{ social.name }}</span>
           <span
             :id="getDescriptionId(social)"
-            class="text-sm text-gray-400 font-mono"
+            class="text-sm text-zinc-400 font-mono"
           >
             {{ getDisplayText(social) }}
           </span>
         </div>
         <div
-          class="text-gray-600 group-hover:text-white transition-colors duration-200"
+          class="text-zinc-600 group-hover:text-white transition-colors duration-200"
           aria-hidden="true"
         >
           →

@@ -197,7 +197,7 @@ const getItemDescId = (item: UsesItem) =>
           <h3
             v-if="subsection.category"
             :id="getSubsectionId(subsection)"
-            class="text-lg font-semibold mb-4 text-gray-300"
+            class="text-lg font-semibold mb-4 text-zinc-300"
           >
             {{ subsection.category }}
           </h3>
@@ -214,7 +214,7 @@ const getItemDescId = (item: UsesItem) =>
                   v-if="item.url"
                   :to="item.url"
                   variant="button"
-                  class="font-medium hover:text-gray-300"
+                  class="font-medium hover:text-zinc-300"
                   :aria-describedby="
                     item.description ? getItemDescId(item) : undefined
                   "
@@ -234,7 +234,7 @@ const getItemDescId = (item: UsesItem) =>
                 <div
                   v-if="item.description"
                   :id="getItemDescId(item)"
-                  class="text-gray-400 text-sm mt-1"
+                  class="text-zinc-400 text-sm mt-1"
                 >
                   {{ item.description }}
                 </div>
@@ -242,7 +242,7 @@ const getItemDescId = (item: UsesItem) =>
 
               <div
                 v-if="item.url"
-                class="text-gray-600 ml-4"
+                class="text-zinc-600 ml-4"
                 aria-hidden="true"
               >
                 →

@@ -1,7 +1,7 @@
 <template>
   <section class="space-y-12 text-sm md:text-base mb-16">
     <div v-for="section in sections" :key="section.category">
-      <h2 class="text-lg md:text-xl font-semibold mb-6 text-gray-300">
+      <h2 class="text-lg md:text-xl font-semibold mb-6 text-zinc-300">
         {{ section.category }}
       </h2>
       <div class="space-y-4">
@@ -20,7 +20,7 @@
                   :to="project.url"
                   variant="button"
                   :id="getProjectId(project)"
-                  class="font-medium text-white hover:text-gray-300"
+                  class="font-medium text-white hover:text-zinc-300"
                   :aria-describedby="getDescriptionId(project)"
                 >
                   {{ project.name }}
@@ -41,7 +41,7 @@
 
               <div
                 :id="getDescriptionId(project)"
-                class="text-gray-400 text-sm mb-3"
+                class="text-zinc-400 text-sm mb-3"
               >
                 {{ project.description }}
               </div>
@@ -55,7 +55,7 @@
                 <span
                   v-for="tech in project.tech"
                   :key="tech"
-                  class="text-xs px-2 py-1 bg-white/10 text-gray-300 rounded"
+                  class="text-xs px-2 py-1 bg-white/10 text-zinc-300 rounded"
                   role="listitem"
                 >
                   {{ tech }}
@@ -65,7 +65,7 @@
 
             <div
               v-if="project.url"
-              class="text-gray-600 group-hover:text-white transition-colors duration-200 ml-4"
+              class="text-zinc-600 group-hover:text-white transition-colors duration-200 ml-4"
               aria-hidden="true"
             >
               →

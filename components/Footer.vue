@@ -3,7 +3,7 @@
     <div
       class="flex flex-col md:flex-row justify-between items-start md:items-center space-y-2 md:space-y-0"
     >
-      <div class="text-xs text-gray-500">
+      <div class="text-xs text-zinc-500">
         {{ text }}
       </div>
 
@@ -12,7 +12,7 @@
           <template v-for="(link, index) in navigationLinks" :key="link.to">
             <BaseLink
               :to="link.to"
-              class="text-gray-500 hover:text-white transition-colors duration-200"
+              class="text-zinc-500 hover:text-white transition-colors duration-200"
               :aria-label="`Go to ${link.label} page`"
             >
               {{ link.label }}
@@ -20,7 +20,7 @@
 
             <span
               v-if="index < navigationLinks.length - 1"
-              class="text-gray-500 mx-2"
+              class="text-zinc-500 mx-2"
               aria-hidden="true"
             >
               /
@@ -32,7 +32,7 @@
       <div v-else class="text-xs">
         <BaseLink
           to="/"
-          class="text-gray-500 hover:text-white transition-colors duration-200"
+          class="text-zinc-500 hover:text-white transition-colors duration-200"
           aria-label="Go back to homepage"
         >
           cd ..

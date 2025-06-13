@@ -1,7 +1,7 @@
 <template>
   <Header title="domain list" show-back-link>
     <template #subtitle>
-      <div class="text-gray-400 text-sm md:text-base space-y-1">
+      <div class="text-zinc-400 text-sm md:text-base space-y-1">
         <div>
           raw file
           <a

@@ -36,7 +36,7 @@ const linkClasses = computed(() => {
 
   const variants = {
     default: "hover:text-white",
-    button: "hover:text-gray-300",
+    button: "hover:text-zinc-300",
     card: "group border border-transparent hover:border-white/20 hover:bg-white/5 transition-all duration-200",
     social:
       "group flex items-center justify-between py-3 px-4 border border-transparent hover:border-white/20 hover:bg-white/5 transition-all duration-200",

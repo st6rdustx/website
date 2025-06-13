@@ -3,7 +3,7 @@
     <nav v-if="showBackLink" class="mb-8" aria-label="Breadcrumb navigation">
       <BaseLink
         to="/"
-        class="text-gray-400 hover:text-white transition-colors duration-200 text-sm"
+        class="text-zinc-400 hover:text-white transition-colors duration-200 text-sm"
         aria-label="Go back to homepage"
       >
         ← back
@@ -14,7 +14,7 @@
       {{ title }}
     </h1>
 
-    <div v-if="$slots.subtitle" class="text-gray-400 text-sm md:text-base">
+    <div v-if="$slots.subtitle" class="text-zinc-400 text-sm md:text-base">
       <slot name="subtitle" />
     </div>
   </header>
